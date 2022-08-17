@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.brushes {
+  font-family: Helvetica, "Times New Roman";
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background-color: mediumspringgreen;
+}
+
+.frames {
+  font-family: Helvetica, "Times New Roman";
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background-color: lightcoral;
+}
+
+.paint {
+  font-family: Helvetica, "Times New Roman";
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background-color: skyblue;
+}
+
+span {
+  font-family: Helvetica, "Times New Roman";
+  font-weight: bold;
+  color: blue;
+}
+
+.title {
+  font-family: Helvetica, "Times New Roman";
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+  background-image: url(/home/quaint/codecademy_projects/dasmato_arts_and_craft/images/image_1.jpeg);
+}
