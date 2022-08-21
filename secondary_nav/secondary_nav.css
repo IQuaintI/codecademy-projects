@@ -1,0 +1,42 @@
+.breadcrumb li {
+  cursor: pointer;
+  display: inline;
+}
+
+.breadcrumb li.attribute a {
+  color: gray;
+}
+.breadcrumb li.attribute::after {
+  content: "/";
+  color: red;
+  font-size: 10px;
+  vertical-align: super;
+}
+
+.breadcrumb li a::before,
+.breadcrumb li a::after {
+  position: absolute;
+  border-color: darkcyan;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+.breadcrumb li + .location::before {
+  padding: 20px;
+  content: ">";
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.breadcrumb a:visited {
+  color: black;
+}
+
+.breadcrumb a:hover {
+  color: red;
+}
+
+.attribute {
+  padding: 20px;
+}
