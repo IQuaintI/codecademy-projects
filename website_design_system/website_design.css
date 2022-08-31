@@ -1,13 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=DynaPuff:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Silkscreen:wght@400;700&display=swap");
+
 html {
   box-sizing: border-box;
 }
-
-p {
-  font-weight: bold;
-}
-
-h2 {
-  text-align: center;
+body {
+  margin: 0 20%;
 }
 
 main {
@@ -21,12 +18,36 @@ main {
 .colors {
   border: 2px solid grey;
   padding: 20px;
-  margin: 20px auto;
+}
+
+.fonts {
+  border: 2px solid grey;
+  padding: 20px;
+  margin-top: 5%;
 }
 
 .colorsbox {
-  width: 100%;
+  position: relative;
+  left: 4%;
+  font-weight: bold;
 }
+
+.fontsbox {
+  position: relative;
+}
+
+.styles {
+  border: 2px solid grey;
+  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.stylesbox {
+  position: relative;
+}
+
+/* Colors */
 
 .red {
   background-color: #ff2800;
@@ -80,4 +101,62 @@ main {
   display: inline-block;
   text-align: center;
   margin: 20px auto;
+}
+
+/* Fonts */
+
+.silkscreen {
+  font-family: "Silkscreen", cursive;
+  border-bottom: 2px solid black;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  border-bottom: 2px solid black;
+}
+
+.dynapuff {
+  font-family: "DynaPuff", cursive;
+  border-bottom: 2px solid black;
+}
+
+.text {
+  border-bottom: 2px solid black;
+}
+
+.times {
+  font-family: "Times New Roman", Times, serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h3:not(:last-of-type) {
+  text-decoration: underline;
+}
+/* Text Styles */
+
+@media only screen and (max-width: 800px) {
+  .red {
+    background-color: #ff2800;
+    height: 100px;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .saffron {
+    background-color: #f4c430;
+    height: 100px;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    bottom: 20px;
+  }
 }

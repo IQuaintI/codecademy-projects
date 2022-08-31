@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  opacity: 0.9;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+#logo {
+  height: 50px;
+  margin: 10px;
+}
