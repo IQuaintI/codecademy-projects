@@ -6,9 +6,120 @@ body {
   background-color: black;
   opacity: 0.9;
   font-family: Helvetica, "Times New Roman", sans-serif;
+  color: seashell;
+  font-size: 22px;
+  overflow-x: hidden;
 }
 
 #logo {
   height: 50px;
   margin: 10px;
+  margin-left: 3%;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  background-color: black;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  align-items: center;
+}
+
+nav {
+  margin-right: 5%;
+}
+
+a {
+  font-size: 22px;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+  color: seashell;
+}
+
+#mission_statement {
+  height: 700px;
+  width: 1200px;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.mission_statement {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  bottom: 120px;
+  left: 45px;
+  width: 1200px;
+  background-color: black;
+}
+
+.tea_of_the_month {
+  text-align: center;
+  margin-left: 2%;
+}
+
+.tea_row_1 {
+  height: 200px;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tea_row_2 {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tea_row_1_text {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tea_row_2_text {
+  display: flex;
+  justify-content: center;
+}
+
+.myrtle {
+  margin-left: 15%;
+}
+
+.bedford {
+  margin-right: 20%;
+}
+
+.myrtle_text {
+  margin-right: 8%;
+}
+
+.bedford_text {
+  margin-left: 12%;
+}
+
+.location {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.locations_heading {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
 }
