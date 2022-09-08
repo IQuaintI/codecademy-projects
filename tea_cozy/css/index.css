@@ -114,12 +114,61 @@ a {
   height: 100%;
   width: 100%;
   z-index: 1;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .locations_heading {
-  display: flex;
   position: absolute;
-  text-align: center;
-  width: 100%;
+  top: 240%;
+  left: 45%;
   z-index: 2;
+}
+
+.places {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 260%;
+  left: 0.5%;
+  z-index: 2;
+}
+
+.places_box_1 {
+  z-index: 2;
+  width: 300px;
+  height: fit-content;
+  background-color: black;
+  text-align: center;
+}
+
+.places_box_2 {
+  z-index: 2;
+  width: 300px;
+  height: fit-content;
+  background-color: black;
+  text-align: center;
+}
+
+.places_box_3 {
+  z-index: 2;
+  width: 300px;
+  height: fit-content;
+  background-color: black;
+  text-align: center;
+}
+
+span {
+  color: red;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  margin-left: 40px;
+  text-align: left;
 }
