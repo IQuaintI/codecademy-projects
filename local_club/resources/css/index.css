@@ -1,0 +1,56 @@
+/* Index 
+
+*/
+
+/*Universal Styles*/
+html {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #dbc82c;
+}
+
+a:visited {
+  color: #131ceb;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+#A {
+  color: red;
+}
+/*Header*/
+header {
+  height: fit-content;
+  width: 100%;
+  font-size: 1.5rem;
+  border-bottom: 2px solid grey;
+  padding-bottom: 1.5rem;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+
+header a {
+  color: #131ceb;
+}
+
+/*Title*/
+#title {
+  position: relative;
+  top: 7rem;
+  font-size: 3rem;
+  background-color: #8f7f00;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
