@@ -1,0 +1,49 @@
+a {
+    display: block;
+    width: 300px;
+    padding: 31px 5px;
+    border-radius: 5px;
+    margin: 20% auto;
+    background-color: orange;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 32px;
+    color: mintcream;
+    /* Transition property targets the thing to be changed */
+    transition-property: background-color;
+    /* Transition duration is how long the transition will take */
+    transition-duration: 3s;
+  }
+  /* Transition timing function is how the transition will happen*/
+  /* Transition delay is how long the transition will wait before starting*/
+  /* Transition shorthand is a combination of the above three properties in this order: property, duration, timing, and delay  */
+  /* All is used to effect everything that can be altered */ 
+
+  a:hover {
+    background-color: limegreen;
+  }
+
+  /*hello*/
+  #hello {
+    color: blueviolet;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: Helvetica;
+    animation-name: rightLeft;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    }
+
+  @keyframes rightLeft {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(-100px);
+    }
+  }
