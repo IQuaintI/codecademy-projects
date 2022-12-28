@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Interactive Webpages</title>
+    <script src="./building_interactive_websites.js" async></script>
+  </head>
+  <style>
+    #penguin {
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+
+  <body>
+    <h1 onclick="colorShift()" id="logo">Hello!</h1>
+    <h2 id="change"></h2>
+    <h3>This will be green</h3>
+    <h4>This will be hidden</h4>
+    <button id="bColor">I change color!</button>
+    <button id="bColorFont">I change color!</button>
+    <button onclick="showInfo()">Click me!</button>;
+    <h4 id="vanish">This will appear when the button is pressed!</h4>
+
+    <button id="banner" onclick="changeBanner()">View</button>
+    <img id="penguin" src="./images/penguin.webp" style="display: none" />
+    <button id="footer" onclick="changeBack()">Close</button>
+
+    <!--Remove Event Listener-->
+    <button id="ticket" onclick="ticketGenerator()">
+      Click for Ticket Number!
+    </button>
+
+    <!--Event Object Properties-->
+    <button id="time" onclick="getTime(event)">
+      Click for the time of the click!
+    </button>
+
+    <!--Random Color Generator-->
+    <h2>Pick a Color!</h2>
+    <button id="pickColor">Pick a Color!</button>
+    <button id="randomColor" onclick="">Random Color</button>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Piano</title>
+  </head>
+  <!--Body-->
+  <body>
+    <button id="c" onclick="keyPlay()">C</button>
+  </body>
+
+  <!--Script-->
+  <script>
+    //keyPlay function
+    function keyPlay(event) {
+      event.target.style.backgroundColor = "blue";
+    }
+
+    c.addEventListener("mousedown", keyPlay);
+
+    //unKeyPlay function
+    function unKeyPlay(event) {
+      event.target.style.backgroundColor = "";
+    }
+
+    c.addEventListener("mouseup", unKeyPlay);
+  </script>
+</html>

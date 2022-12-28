@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <!-- Form Testing-->
+    <form method="post">
+      <!--Username (Text)-->
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+        required
+        pattern="[a-zA-Z0-9]{5,12}"
+      />
+      <br />
+      <br />
+
+      <!--Password (Password)-->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="username"
+        placeholder="Password"
+        required
+      />
+      <br />
+      <br />
+
+      <!--Age (Number)-->
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="Age"
+        min="0"
+        max="120"
+      />
+      <br />
+      <br />
+
+      <!--Mood (Range)-->
+      <label for="mood">Mood</label>
+      <br />
+      <input type="range" name="mood" id="mood" min="0" max="10" step="1" />
+      <br />
+      <br />
+
+      <!--Exist (Checkbox)-->
+
+      <p>Choose your pizza toppings:</p>
+      <label for="cheese">Extra cheese</label>
+      <input id="cheese" name="topping" type="checkbox" value="cheese" />
+      <br />
+      <label for="pepperoni">Pepperoni</label>
+      <input id="pepperoni" name="topping" type="checkbox" value="pepperoni" />
+      <br />
+      <label for="anchovy">Anchovy</label>
+      <input id="anchovy" name="topping" type="checkbox" value="anchovy" />
+      <br />
+      <br />
+
+      <!-- Exist (Radio)-->
+      <label for="exist">Do you exist?</label>
+      <input id="exist" name="exist" type="radio" />
+      <label for="exist">Yes</label>
+      <input id="exist" name="exist" type="radio" />
+      <label for="exist">No</label>
+      <br />
+      <br />
+
+      <!--Color (Dropdown)-->
+      <label for="color">Favorite Color</label>
+      <select name="color" id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="purple">Purple</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+      </select>
+      <br />
+      <br />
+
+      <!--Fruits (Datalist)-->
+      <label for="fruit">Favorite Fruit</label>
+      <input list="fruits" name="fruit" id="fruit" type="text" />
+      <datalist id="fruits">
+        <option value="Apple"></option>
+        <option value="Banana"></option>
+        <option value="Orange"></option>
+        <option value="Grape"></option>
+        <option value="Pineapple"></option>
+        <option value="Strawberry"></option>
+        <option value="Watermelon"></option>
+        <option value="Mango"></option>
+      </datalist>
+      <br />
+      <br />
+
+      <!--Diary (Textarea)-->
+      <label for="diary">Diary</label>
+      <br />
+      <textarea
+        name="diary"
+        id="diary"
+        cols="30"
+        rows="10"
+        minlength="1"
+        maxlength="10"
+      ></textarea>
+      <br />
+      <br />
+
+      <!--Submit-->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
