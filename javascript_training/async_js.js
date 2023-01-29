@@ -1,3 +1,4 @@
+/*
 //What is a promise?//
 //A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.//
 
@@ -69,10 +70,29 @@ orderPromise.then(handleSuccess, handleFailure);
 orderPromise.catch(handleFailure);
 
 
-
-
-
-
-
 //module.exports//
 module.exports = { usingSTO, orderSunglasses, orderPromise };
+*/
+
+const inventory = {
+  sunglasses: 1900,
+  pants: 1088,
+  bags: 1344,
+};
+
+const checkInventory = (order) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let inStock = order.every((item) => inventory[item[0]] >= item[1]);
+      if (inStock) {
+        resolve(`Thank you. Your order was successful.`);
+      } else {
+        reject(
+          `We're sorry. Your order could not be completed because some items are sold out.`
+        );
+      }
+    }, 1000);
+  });
+};
+
+module.exports = { checkInventory };
